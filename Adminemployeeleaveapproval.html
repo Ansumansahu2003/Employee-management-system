@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Leave Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="Employeeadminleaveapplication.css" />
+    <title>Leave Approval Dashboard</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="adminleaveapplication.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
@@ -23,18 +27,18 @@
     </header>
     <div class="down-part">
       <nav>
-        <ul id="side-bar"> 
-            
-        </ul>
+        <ul id="side-bar"></ul>
       </nav>
+
+      
       <main>
         <div class="content">
           <h1><b>Leave Application Approval</b></h1>
           <p>
             The administrative department manages the finances of an
             organization from both an accounts-payable and accounts-receivable
-            viewpoint. Therefore, the overall flow of money in any
-            organization goes through the administrative department.
+            viewpoint. Therefore, the overall flow of money in any organization
+            goes through the administrative department.
           </p>
         </div>
         <div class="main-container">
@@ -43,25 +47,51 @@
               <b>Admin Details</b>
             </h2>
             <div class="info">
-              <div class="details">
-                <div class="index">Admin Name:</div>
-                <div class="value">ANSUMAN SAHU</div>
+              <div class="left-section">
+                <div class="details">
+                  <div class="index">Admin Name:</div>
+                  <div class="value">ANSUMAN SAHU</div>
+                </div>
+                <div class="details">
+                  <div class="index">Admin Id:</div>
+                  <div class="value">20105555</div>
+                </div>
+                <div class="details">
+                  <div class="index">Department:</div>
+                  <div class="value">CSE</div>
+                </div>
               </div>
-              <div class="details">
-                <div class="index">Admin Id:</div>
-                <div class="value">20105555</div>
-              </div>
-              <div class="details">
-                <div class="index">Department:</div>
-                <div class="value">CSE</div>
-              </div>
-              <div class="details">
-                <div class="index">Director Name:</div>
-                <div class="value">ELone Musk</div>
-              </div>
-              <div class="details">
-                <div class="index">Co-Director Name:</div>
-                <div class="value">Narendra Modi</div>
+              <div class="right-section">
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Vendor Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
+
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Employee Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
+                <input type="submit" class="btn btn-primary" />
               </div>
             </div>
           </div>
@@ -70,11 +100,11 @@
           <thead>
             <tr>
               <th style="padding-left: 30px">Req No.</th>
-              <th style="padding-left: 30px">Admin Id</th>
-              <th style="padding-left: 30px">Admin Name</th>
+              <th style="padding-left: 30px">Employee Id</th>
+              <th style="padding-left: 30px">Employee Name</th>
               <th style="padding-left: 30px">Department</th>
               <th style="padding-left: 30px">Leave Reason</th>
-              <th style="padding-left: 30px">Admin</th>
+              <th style="padding-left: 30px">Vendor Name</th>
               <th style="padding-left: 30px">Approve</th>
               <th style="padding-left: 30px">Decline</th>
             </tr>
