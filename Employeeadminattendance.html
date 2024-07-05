@@ -27,87 +27,59 @@
           <a href="" class="btn btn-primary">Logout</a>
         </div>
       </header>
-      <div class="down-part">
-        <nav>
-          <ul id="side-bar"> 
+      <nav>
+        <ul id="side-bar"> 
             
-          </ul>
-        </nav>
+        </ul>
+      </nav>
 
         <main>
           <div class="content">
-            <h1><b>Employee Attendance</b></h1>
+            <h1><b>Attendance</b></h1>
 
             <p>
-              An employee is a professional who receives compensation for performing and completing their work-related duties. After completing an application and interview process, a company hires employees based on their skill set.</p>
+              An employee is a professional who receives compensation for performing and completing their work-related duties. After completing an application and interview process, a company hires employees based on their skill set.
+            </p>
           </div>
 
-          <div class="bar">
-            <h4>
-              <b>DETAILS</b>
-            </h4>
-            <div class="container-bar">
-              <div class="details-left">
-                <label style="font-size: 16px; margin-right: 7px"
-                  >Department:</label
-                >
-                <div class="dropdown">
-                  <div class="dropbtn-container" onclick="toggleDropdown()">
-                    <span id="selectedOption">Select an option</span>
-                    <div>▼</div>
+          <div class="main-container">
+            <div class="container-employee-details">
+              <h2 style="font-size: 25px; margin-bottom: 10px">
+                <b>Employee Details</b>
+              </h2>
+              <div class="info">
+                <div class="details-left">
+                  <div class="details">
+                    <div class="index">Employee Name:</div>
+                    <div class="value">ANSUMAN SAHU</div>
                   </div>
-                  <div class="dropdown-content" id="dropdown">
-                    <a href="#" onclick="selectOption('Mechanical')"
-                      >Mechanical</a
-                    >
-                    <a href="#" onclick="selectOption('Technical')"
-                      >Technical</a
-                    >
-                    <a href="#" onclick="selectOption('It')">IT</a>
-                    <a href="#" onclick="selectOption('Civil')">Civil</a>
+                  <div class="details">
+                    <div class="index">Employee Id:</div>
+                    <div class="value">20105555</div>
+                  </div>
+                  <div class="details">
+                    <div class="index">Department:</div>
+                    <div class="value">CSE</div>
+                  </div>
+                  <div class="details">
+                    <div class="index">Date:</div>
+                    <input
+                      type="date"
+                      style="padding-left: 10px; margin-left: 5px; font-size: 16px"
+                    />
+                    <input
+                      type="submit"
+                      class="btn btn-primary"
+                      style="margin-left: 10px; padding: 5px; border-radius: 8px"
+                    />
                   </div>
                 </div>
-                <br />
-                <label
-                  style="font-size: 16px; margin-right: 2px; border-radius: 5px"
-                >
-                  Emp Id:
-                </label>
-                <input
-                  type="text"
-                  style="
-                    padding-left: 5px;
-                    border: none;
-                    height: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
-                    margin-bottom: 5px;
-                    width: 205px;
-                  "
-                />
-                <br />
-                <label
-                  style="margin-top: 10px; font-size: 16px; margin-right: 20px"
-                  >Date:</label
-                >
-                <input
-                  type="date"
-                  style="
-                    border: none;
-                    height: 35px;
-                    width: 206px;
-                    font-size: 16px;
-                    padding-left: 20px;
-                    margin-bottom: 10px;
-                  "
-                />
-
-                <input type="submit" class="submit-button" />
-              </div>
-              <div class="details-right">
-                <label style="font-size: 16px; margin-right: 10px"
+                <div class="index">
+                  <label class="year" style="font-size: 16px; margin-right: 10px"
                   >Joining Year: 2024</label
-                >
+                  >
+                  <br />
+                </div>
               </div>
             </div>
           </div>
@@ -115,12 +87,12 @@
             <table>
               <thead>
                 <tr>
-                  <th style="padding: 20px 20px 20px 30px">No. of Absent</th>
-                  <th style="padding: 20px 20px 20px 30px">No. of Present</th>
-                  <th style="padding: 20px 20px 20px 30px">Present/Absent</th>
-                  <th style="padding: 20px 20px 20px 30px">Total Days</th>
+                  <th style="padding: 20px 20px 20px 30px">Sl. No</th>
                   <th style="padding: 20px 20px 20px 30px">Employee ID</th>
                   <th style="padding: 20px 20px 20px 30px">Employee Name</th>
+                  <th style="padding: 20px 20px 20px 30px">Present/Absent</th>
+                  <th style="padding: 20px 20px 20px 30px">Date</th>
+                  <th style="padding: 20px 20px 20px 30px">Vendor Name</th>
                 </tr>
               </thead>
               <tbody>
