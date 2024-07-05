@@ -75,98 +75,57 @@ main {
 }
 
 .content {
-  margin-bottom: 30px;
-  margin-top: 60px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: black;
 }
 
-.bar {
-  background-color: skyblue;
-  padding: 20px;
-  border: 1px solid black;
+.container-employee-details {
+  width: 100%;
+  background-color: #87ceeb;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px 15px 20px;
   border-radius: 10px;
 }
 
-.container-bar {
+.info {
+  background-color: rgb(178, 228, 248);
+  border: 1px solid #000000;
+  padding: 5px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  font-size: 20px;
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(178, 228, 248);
-  padding: 10px;
-  gap: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
+}
+
+.index {
+  width: 250px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.value {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 18px;
+  color: black;
 }
 
 .details-left,
 .details-right {
   flex: 1;
-  min-width: 200px;
-}
-
-.dropdown {
-  position: relative;
-  width: 370px;
-}
-
-.dropbtn-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(226, 247, 251);
-  padding: 16px;
-  cursor: pointer;
-  height: 40px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.show {
-  display: block;
-}
-
-.submit-button {
-  width: 100px;
-  height: 35px;
-  background-color: rgb(226, 247, 251);
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 16px;
+  width: 600px;
   font-weight: bold;
-  cursor: pointer;
-  transition: all 0.09s ease;
-}
-
-.submit-button-down{
-  width: 100px;
-  height: 35px;
-  background-color: rgb(226, 247, 251);
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.09s ease;
-  margin-left: 86%;
-}
-
-.submit-button:active {
-  background-color: white;
+  font-size: 20px;
 }
 
 .table {
@@ -200,6 +159,24 @@ td:empty::before {
   min-height: 50px;
 }
 
+.tic {
+  height: 15px;
+  width: 15px;
+}
+
+.down-submit-btn {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2 solid black;
+}
+
+@media (max-width: 1180px) {
+  .container-bar {
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -217,13 +194,22 @@ td:empty::before {
     margin-left: 0;
   }
 
-  .bar {
-    margin-left: 0;
-    width: 100%;
+  .content {
+    margin-top: 20px;
   }
 
-  .container-bar {
-    flex-direction: column;
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .container-employee-details {
+    margin-bottom: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
 
@@ -240,7 +226,22 @@ td:empty::before {
     padding: 10px 0;
   }
 
-  .dropbtn-container {
-    padding: 12px;
+  .details {
+    font-size: 18px;
+  }
+
+  .index {
+    width: 100%;
+  }
+
+  .value {
+    margin-left: 0;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+    padding: 5px;
   }
 }
