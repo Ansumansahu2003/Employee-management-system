@@ -193,3 +193,19 @@ input[type="radio"] {
     width: calc(100% - 22px);
   }
 }
+
+
+.submit-button-down{
+  width: 200px;
+  height: 40px;
+  background-color: rgb(226, 247, 251);
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.09s ease;
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
