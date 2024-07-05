@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Leave Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="Employeeadminquery.css" />
+    <title>Query Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="adminquery.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
@@ -23,9 +23,7 @@
     </header>
     <div class="down-part">
       <nav>
-        <ul id="side-bar"> 
-            
-        </ul>
+        <ul id="side-bar"></ul>
       </nav>
       <main>
         <div class="content">
@@ -33,8 +31,8 @@
           <p>
             The administrative department manages the finances of an
             organization from both an accounts-payable and accounts-receivable
-            viewpoint. Therefore, the overall flow of money in any
-            organization goes through the administrative department.
+            viewpoint. Therefore, the overall flow of money in any organization
+            goes through the administrative department.
           </p>
         </div>
         <div class="main-container">
@@ -43,34 +41,63 @@
               <b>Admin Details</b>
             </h2>
             <div class="info">
-              <div class="details">
-                <div class="index">Admin Name:</div>
-                <div class="value">ANSUMAN SAHU</div>
-              </div>
-              <div class="details">
-                <div class="index">Admin Id:</div>
-                <div class="value">20105555</div>
-              </div>
-              <div class="details">
-                <div class="index">Department:</div>
-                <div class="value">CSE</div>
-              </div>
-              <div class="details">
-                <div class="index">Director Name:</div>
-                <div class="value">ELone Musk</div>
-              </div>
-              <div class="details">
-                <div class="index">Date:</div>
-                <div class="value">
-                  <input type="date" style="padding-left: 10px" />
-                  <button
+              <div class="left-section">
+                <div class="details">
+                  <div class="index">Admin Name:</div>
+                  <div class="value">ANSUMAN SAHU</div>
+                </div>
+                <div class="details">
+                  <div class="index">Admin Id:</div>
+                  <div class="value">20105555</div>
+                </div>
+                <div class="details">
+                  <div class="index">Department:</div>
+                  <div class="value">CSE</div>
+                </div>
+                <div class="details">
+                  <div class="index">Date:</div>
+                  <input
+                    type="date"
                     style="
-                      padding: 5px 15px;
-                      background-color: rgb(178, 228, 248);
+                      padding-left: 10px;
+                      margin-left: 5px;
+                      font-size: 16px;
+                      margin-right: 20px;
                     "
+                  />
+
+                  <input type="submit" class="btn btn-primary" />
+                </div>
+              </div>
+              <div class="right-section">
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Vendor Id:</label
                   >
-                    Submit
-                  </button>
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
+
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Employee Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
                 </div>
               </div>
             </div>
@@ -80,9 +107,10 @@
           <thead>
             <tr>
               <th style="padding-left: 20px">Req No.</th>
-              <th style="padding-left: 20px">Admin Id</th>
-              <th style="padding-left: 20px">Admin Name</th>
+              <th style="padding-left: 20px">Employee Id</th>
+              <th style="padding-left: 20px">Employee Name</th>
               <th style="padding-left: 20px">Department</th>
+              <th style="padding-left: 20px">Vendor Name</th>
               <th style="padding-left: 20px">Query Reason</th>
               <th style="padding-left: 20px">Resolve/Decline</th>
             </tr>
@@ -95,13 +123,6 @@
               <td></td>
               <td></td>
               <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
               <td></td>
             </tr>
             <tr>
@@ -111,8 +132,19 @@
               <td></td>
               <td></td>
               <td></td>
+              <td></td>
             </tr>
             <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>
