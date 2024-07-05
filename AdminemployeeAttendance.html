@@ -6,19 +6,16 @@
 
     <link rel="stylesheet" type="text/css" href="adminemployeeAttendanceboth.css" />
 
-    <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
     />
 
-    <!-- Optional theme -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css"
     />
 
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   </head>
   <body>
@@ -30,16 +27,16 @@
           <a href="" class="btn btn-primary">Logout</a>
         </div>
       </header>
-      <div class="down-part">
-        <nav>
-          <ul id="side-bar"> 
+      <nav>
+        <ul id="side-bar"> 
             
-          </ul>
-        </nav>
+        </ul>
+      </nav>
+
 
         <main>
           <div class="content">
-            <h1><b>Attendance </b></h1>
+            <h1><b>Attendance</b></h1>
 
             <p>
               The administrative department manages the finances of an
@@ -49,76 +46,56 @@
             </p>
           </div>
 
-          <div class="bar">
-            <h4>
-              <b>DETAILS</b>
-            </h4>
-            <div class="container-bar">
-              <div class="details-left">
-                <label style="font-size: 16px; margin-right: 7px"
-                  >Department:</label
-                >
-                <div class="dropdown">
-                  <div class="dropbtn-container" onclick="toggleDropdown()">
-                    <span id="selectedOption">Select an option</span>
-                    <div>▼</div>
+          <div class="main-container">
+            <div class="container-employee-details">
+              <h2 style="font-size: 25px; margin-bottom: 10px">
+                <b>Admin Details</b>
+              </h2>
+              <div class="info">
+                <div class="details-left">
+                  <div class="details">
+                    <div class="index">Admin Name:</div>
+                    <div class="value">ANSUMAN SAHU</div>
                   </div>
-                  <div class="dropdown-content" id="dropdown">
-                    <a href="#" onclick="selectOption('Mechanical')"
-                      >Mechanical</a
-                    >
-                    <a href="#" onclick="selectOption('Technical')"
-                      >Technical</a
-                    >
-                    <a href="#" onclick="selectOption('It')">IT</a>
-                    <a href="#" onclick="selectOption('Civil')">Civil</a>
+                  <div class="details">
+                    <div class="index">Admin Id:</div>
+                    <div class="value">20105555</div>
+                  </div>
+                  <div class="details">
+                    <div class="index">Department:</div>
+                    <div class="value">CSE</div>
+                  </div>
+                  <div class="details">
+                    <div class="index">Date:</div>
+                    <input
+                      type="date"
+                      style="padding-left: 10px; margin-left: 5px; font-size: 16px"
+                    />
+                    <input
+                      type="submit"
+                      class="btn btn-primary"
+                      style="margin-left: 10px; padding: 8px; border-radius: 10px"
+                    />
                   </div>
                 </div>
-                <br />
-                <label
-                  style="font-size: 16px; margin-right: 2px; border-radius: 5px"
-                >
-                  Admin Id:
-                </label>
-                <input
-                  type="text"
-                  style="
-                    padding-left: 5px;
-                    border: none;
-                    height: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
-                    margin-bottom: 5px;
-                  "
-                />
-                <br />
-                <label
-                  style="margin-top: 10px; font-size: 16px; margin-right: 20px"
-                  >Date:</label
-                >
-                <input
-                  type="date"
-                  style="
-                    border: none;
-                    height: 35px;
-                    width: 206px;
-                    font-size: 16px;
-                    padding-left: 20px;
-                    margin-bottom: 10px;
-                  "
-                />
-
-                <input type="submit" class="submit-button" />
-              </div>
-              <div class="details-right">
-                <label class="year" style="font-size: 16px; margin-right: 10px"
+                <div class="index">
+                  <label class="year" style="font-size: 16px; margin-right: 10px"
                   >Joining Year: 2024</label
-                >
-                <br />
-                <div class="unq-id">
-                  <label style="font-size: 16px; margin-right: 3px"
-                    >Unique Id:</label
                   >
+                <br />
+                 
+                <div class="index">
+                  <label style="font-size: 16px; margin-right: 3px">Vendor Id:</label>
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                  <label style="font-size: 16px; margin-right: 3px;">Employee Id:</label>
                   <input
                     type="text"
                     style="
@@ -142,49 +119,78 @@
                   <th style="padding: 20px 20px 20px 30px">Total Days</th>
                   <th style="padding: 20px 20px 20px 30px">Employee ID</th>
                   <th style="padding: 20px 20px 20px 30px">Employee Name</th>
+                  <th style="padding: 20px 20px 20px 30px">Edit</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><input type="checkbox" style="padding: 20px;"></td>
+                  <td><input type="checkbox" class="tic" /></td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td style="padding-left: 5px">
+                    <button class="btn btn-success">Edit</button>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><input type="checkbox" style="padding: 20px;"></td>
+                  <td><input type="checkbox" class="tic" /></td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td style="padding-left: 5px">
+                    <button class="btn btn-success">Edit</button>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><input type="checkbox" style="padding: 20px;"></td>
+                  <td><input type="checkbox" class="tic" /></td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td style="padding-left: 5px">
+                    <button class="btn btn-success">Edit</button>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><input type="checkbox" style="padding: 20px;"></td>
+                  <td><input type="checkbox" class="tic" /></td>
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td style="padding-left: 5px">
+                    <button class="btn btn-success">Edit</button>
+                  </td>
                 </tr>
-                <!-- Add more rows as needed -->
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input type="checkbox" class="tic" /></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="padding-left: 5px">
+                    <button class="btn btn-success">Edit</button>
+                  </td>
+                </tr>
               </tbody>
             </table>
+            <input type="submit" class="btn btn-primary"
+            style="margin-left: 1%; margin-top: 15px; padding: 10px 15px; border-radius: 5px">
+            
+            <button class="btn btn-success"
+            style="margin-left: 1%; margin-top: 15px; padding: 9px 13px; border-radius: 5px">Edit</button>
+          
           </div>
-          <input type="submit" class="submit-button-down" />
         </main>
       </div>
     </div>
   </body>
+  
   <script src="control.js"></script>
 </html>
