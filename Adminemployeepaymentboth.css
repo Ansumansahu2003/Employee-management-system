@@ -98,6 +98,12 @@ main {
   padding: 0px 20px 15px 20px;
   border-radius: 10px;
 }
+.index {
+  width: 250px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
 
 .info {
   background-color: rgb(178, 228, 248);
@@ -194,6 +200,14 @@ td {
     overflow-x: auto;
     white-space: nowrap;
   }
+}
+
+.down-submit-btn {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2 solid black;
 }
 
 @media (max-width: 480px) {
