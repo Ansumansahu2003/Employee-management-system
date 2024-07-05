@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Payment Management</title>
-    <link rel="stylesheet" type="text/css" href="Adminemployeepaymentboth.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="adminpayment.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
@@ -23,17 +27,18 @@
     </header>
     <div class="down-part">
       <nav>
-        <ul id="side-bar"> 
-            
-        </ul>
+        <ul id="side-bar"></ul>
       </nav>
+
       <main>
         <div class="content">
           <h1><b>Payment Management</b></h1>
-          <p>The administrative department manages the finances of an
+          <p>
+            The administrative department manages the finances of an
             organization from both an accounts-payable and accounts-receivable
-            viewpoint. Therefore, the overall flow of money in any
-            organization goes through the administrative department.</p>
+            viewpoint. Therefore, the overall flow of money in any organization
+            goes through the administrative department.
+          </p>
         </div>
         <div class="main-container">
           <div class="container-employee-details">
@@ -41,30 +46,64 @@
               <b>Admin Details</b>
             </h2>
             <div class="info">
-              <div class="details">
-                <div class="index">Admin Name:</div>
-                <div class="value">ANSUMAN SAHU</div>
+              <div class="left-section">
+                <div class="details">
+                  <div class="index">Admin Name:</div>
+                  <div class="value">ANSUMAN SAHU</div>
+                </div>
+                <div class="details">
+                  <div class="index">Admin Id:</div>
+                  <div class="value">20105555</div>
+                </div>
+                <div class="details">
+                  <div class="index">Department:</div>
+                  <div class="value">CSE</div>
+                </div>
+                <div class="details">
+                  <div class="index">Date:</div>
+                  <input
+                    type="date"
+                    style="
+                      padding-left: 10px;
+                      margin-left: 5px;
+                      font-size: 16px;
+                      margin-right: 20px;
+                    "
+                  />
+
+                  <input type="submit" class="btn btn-primary" />
+                </div>
               </div>
-              <div class="details">
-                <div class="index">Admin Id:</div>
-                <div class="value">20105555</div>
-              </div>
-              <div class="details">
-                <div class="index">Department:</div>
-                <div class="value">CSE</div>
-              </div>
-              <div class="details">
-                <div class="index">Date:</div>
-                <input
-                  type="date"
-                  style="
-                    padding-left: 10px;
-                    margin-left: 5px;
-                    font-size: 16px;
-                    margin-right: 20px;
-                  "
-                />
-                <input type="submit" class="submit-btn" />
+              <div class="right-section">
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Vendor Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
+
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Employee Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -194,8 +233,19 @@
             </tr>
           </table>
         </div>
+        <input
+          type="submit"
+          class="btn btn-primary"
+          style="
+            margin-left: 1%;
+            margin-top: 15px;
+            padding: 8px 13px;
+            border-radius: 5px;
+          "
+        />
       </main>
     </div>
   </body>
+
   <script src="control.js"></script>
-</html>  
+</html>
