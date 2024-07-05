@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Food Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="Employeeadminbothfoodallowance.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="adminfoodallowance.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
@@ -23,18 +27,18 @@
     </header>
     <div class="down-part">
       <nav>
-        <ul id="side-bar"> 
-            
-        </ul>
+        <ul id="side-bar"></ul>
       </nav>
+
+      
       <main>
         <div class="content">
           <h1><b>Food Allowance</b></h1>
           <p>
             The administrative department manages the finances of an
             organization from both an accounts-payable and accounts-receivable
-            viewpoint. Therefore, the overall flow of money in any
-            organization goes through the administrative department.
+            viewpoint. Therefore, the overall flow of money in any organization
+            goes through the administrative department.
           </p>
         </div>
         <div class="main-container">
@@ -43,32 +47,74 @@
               <b>Admin Details</b>
             </h2>
             <div class="info">
-              <div class="details">
-                <div class="index">Admin Name:</div>
-                <div class="value">ANSUMAN SAHU</div>
+              <div class="left-section">
+                <div class="details">
+                  <div class="index">Admin Name:</div>
+                  <div class="value">ANSUMAN SAHU</div>
+                </div>
+                <div class="details">
+                  <div class="index">Admin Id:</div>
+                  <div class="value">20105555</div>
+                </div>
+                <div class="details">
+                  <div class="index">Department:</div>
+                  <div class="value">CSE</div>
+                </div>
+                <div class="details">
+                  <div class="index">Food Type:</div>
+                  <div class="value">Meal, Snack</div>
+                </div>
+                <div class="details">
+                  <div class="index">Date:</div>
+                  <input
+                    type="date"
+                    style="
+                      padding-left: 10px;
+                      margin-left: 5px;
+                      font-size: 16px;
+                    "
+                  />
+                  <input
+                    type="submit"
+                    class="btn btn-primary"
+                    style="
+                      margin-left: 10px;
+                      padding: 5px 10px;
+                      border-radius: 5px;
+                    "
+                  />
+                </div>
               </div>
-              <div class="details">
-                <div class="index">Admin Id:</div>
-                <div class="value">20105555</div>
-              </div>
-              <div class="details">
-                <div class="index">Department:</div>
-                <div class="value">CSE</div>
-              </div>
-              <div class="details">
-                <div class="index">Food Type:</div>
-                <div class="value">Meal, Snack</div>
-              </div>
-              <div class="details">
-                <div class="index">Date:</div>
-                <input
-                  type="date"
-                  style="padding-left: 10px; margin-left: 5px; font-size: 16px"
-                />
-                <input
-                  type="submit"
-                  style="margin-left: 10px; padding: 5px 10px; border-radius: 5px"
-                />
+              <div class="right-section">
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Vendor Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
+
+                <div>
+                  <label style="font-size: 16px; margin-right: 3px"
+                    >Employee Id:</label
+                  >
+                  <input
+                    type="text"
+                    style="
+                      padding-left: 5px;
+                      border: none;
+                      width: 100px;
+                      height: 25px;
+                    "
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -81,10 +127,12 @@
               <th style="padding: 20px">Employee Id</th>
               <th style="padding: 20px">Employee Name</th>
               <th style="padding: 20px">Department</th>
+              <th style="padding: 20px">Vendor Name</th>
               <th style="padding: 20px">Food Type</th>
               <th style="padding: 20px">1st Food price</th>
               <th style="padding: 20px">2nd Food price</th>
               <th style="padding: 20px">Total</th>
+              <th style="padding: 20px">Edit</th>
             </tr>
           </thead>
           <tbody>
@@ -94,6 +142,7 @@
               <td></td>
               <td></td>
               <td></td>
+              <td></td>
               <td>
                 <input
                   type="text"
@@ -126,9 +175,13 @@
                     font-size: 16px;
                   "
                 />
+              </td>
+              <td style="padding-left: 5px">
+                <button class="btn btn-success">Edit</button>
               </td>
             </tr>
             <tr>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>
@@ -168,13 +221,125 @@
                   "
                 />
               </td>
+              <td style="padding-left: 5px">
+                <button class="btn btn-success">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  style="
+                    width: 60px;
+                    margin-left: 20px;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                  "
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  style="
+                    width: 60px;
+                    margin-left: 20px;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                  "
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  style="
+                    width: 60px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                  "
+                />
+              </td>
+              <td style="padding-left: 5px">
+                <button class="btn btn-success">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  style="
+                    width: 60px;
+                    margin-left: 20px;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                  "
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  style="
+                    width: 60px;
+                    margin-left: 20px;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                  "
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  style="
+                    width: 60px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                  "
+                />
+              </td>
+              <td style="padding-left: 5px">
+                <button class="btn btn-success">Edit</button>
+              </td>
             </tr>
           </tbody>
         </table>
+
         <input
-                  type="submit"
-                  style="margin-left: 93%; margin-top: 20px; padding: 5px 10px; border-radius: 5px"
-                />
+          type="submit"
+          class="btn btn-primary"
+          style="
+            margin-left: 1%;
+            margin-top: 15px;
+            padding: 8px 13px;
+            border-radius: 5px;
+          "
+        />
+        <button
+          class="btn btn-success"
+          style="
+            margin-left: 1%;
+            margin-top: 15px;
+            padding: 8px 13px;
+            border-radius: 5px;
+          "
+        >
+          Edit
+        </button>
       </main>
     </div>
   </body>
